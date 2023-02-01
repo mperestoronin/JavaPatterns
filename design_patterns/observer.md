@@ -9,7 +9,7 @@
 
 ### Детальный разбор
 у интерфейса Observable есть 3 метода:
-- addObserver(Observer o) - 
+- addObserver(Observer o) 
 - removeObserver(Observer o)
 - notifyObserver(Observer o)
 
