@@ -1,7 +1,7 @@
 # Наблюдатель Observer
 ### Краткое описание
 Определяет зависимость типа один ко многим между объектами таким образом, что при изменении состояния одного объекта все зависящие от него оповещаются об этом событии.
-![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/observer1.png)
+![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/observer2.png)
 ### Классы и интерфейсы паттерна
 - интерфейс Observable (наблюдаемый)
 - интерфейс Observer (наблюдатель)
