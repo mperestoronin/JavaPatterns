@@ -10,6 +10,7 @@
 ## Более детальный разбор
 <br> Рассмотрим картину ниже:
 ![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/memento2.png)
+
 Как уже писалось ранее, **memento** - это хранитель. Он хранит состояние объекта originator (значение его поля) в своем поле state.
 <br>У **memento** есть:
 - state - состояние originator на момент создания этого **memento**
