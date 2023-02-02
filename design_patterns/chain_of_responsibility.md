@@ -6,6 +6,10 @@
 - интерфейс Handler - интерфейс обработчика, содержит один метод - handleMessage
 - ConcreteHandler - какой-то конкретный обработчик, реализует интерфейс Handler
 
+![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/chain1.png)
+
+![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/chain2.png)
+
 ### Детальный разбор
 Предположим, что произошло какое-то событие (например поступило сообщение)
 <br>Это событие будет обрабатывать цепочка обработчиков (самих обработчиков может быть сколько угодно)
