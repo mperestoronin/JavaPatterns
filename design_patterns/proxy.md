@@ -19,6 +19,7 @@
 «Реальному Субъекту».
 
 ![](https://habrastorage.org/r/w1560/getpro/habr/post_images/3c3/c0f/87d/3c3c0f87d7e200b0b383223e547c7f4e.jpg)
+![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/proxy.png)
 
 ### Классы и интерфейсы паттерна
 - интерфейс service - содержит единственный метод doIt (иногда называют request)
