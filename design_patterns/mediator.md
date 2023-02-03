@@ -10,6 +10,7 @@
 - ConcreteClient/ ConcreteAggregate 
 
 ![](https://metanit.com/sharp/patterns/pics/mediator.png)
+![](https://habrastorage.org/r/w1560/getpro/habr/post_images/9c4/8eb/8ab/9c48eb8ab34d448fc5886c5c965de090.jpg)
 
 ### Детальный разбор
 Определяет объект, который инкапсулирует логику взаимодействия других объектов. Объекты не ссылаются друг на друга явно 
