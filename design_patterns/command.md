@@ -12,7 +12,7 @@
 
 ![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/command.jpg)
 
-![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/command2.jpg)
+![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/command2.gif)
 ### Классы и интерфейсы паттерна
 - Client - тот, кто запрашивает выполнения какого - то действия
 - Invoker - вызывающий класс. Хранит в себе ссылки на экземпляры ConcreteCommand. Под каждое действие в Receiver хранит отдельный ConcreteCommand
