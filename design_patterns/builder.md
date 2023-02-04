@@ -4,7 +4,7 @@
 ![](https://habrastorage.org/r/w1560/getpro/habr/post_images/16b/2fe/a7f/16b2fea7f7f4dcd14fe2ad0b0bb9bf84.jpg)
 ![](https://upload.wikimedia.org/wikipedia/ru/2/28/Builder.gif)
 ### Классы и интерфейсы
-- Director - класс, контролирующий строительство product ConcreteBuilder'ом.
+- Director - класс, контролирующий строительство product ConcreteBuilder'ом. Хранит в себе ссылку на объект реализующий Builder (т.е. на ConcreteBuilder) и просто вызывает его методы в нужном порядке.
 - интерфейс Builder - Определяет все этапы, необходимые для постройки product.
 - ConcreteBuilder - строитель product. Может быть несколько ConcreteBuilder'ов, если в программе есть нужда в создании объекта разнымим способами / создании объекта с разными характеристиками.
 - product - объект, который мы пытаемся "построить".
