@@ -2,3 +2,4 @@
 ### Краткое описание
 Декоратор расширяет функциональность основного класса путем добавления дополнительного кода в начале, конце или вместо существующей реализации.
 ![](https://habrastorage.org/r/w1560/getpro/habr/post_images/15c/27c/26e/15c27c26e08f1936e3f73089ecac3d05.jpg)
+![](https://upload.wikimedia.org/wikipedia/ru/thumb/0/00/Decorator_template.png/250px-Decorator_template.png)
