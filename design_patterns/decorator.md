@@ -89,7 +89,7 @@ print(capuccino.cost())
 print(capuccinoWithChocolate.ingredients())
 print(capuccinoWithChocolate.cost())
 ```
-
+Пример на java
 ``` java
 public interface InterfaceComponent {
 	void doOperation();
