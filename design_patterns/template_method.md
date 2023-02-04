@@ -4,7 +4,7 @@
 основу алгоритма и позволяющий наследникам переопределять некоторые шаги алгоритма,
 не изменяя его структуру в целом.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Template_Method_UML.svg/300px-Template_Method_UML.svg.png)
+![](https://metanit.com/sharp/patterns/pics/templatemethod.png)
 
 ### Применение 
 - Однократное использование инвариантной части алгоритма, с оставлением изменяющейся части на усмотрение наследникам.
