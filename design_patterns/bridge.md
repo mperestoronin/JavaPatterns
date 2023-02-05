@@ -18,6 +18,7 @@
 Мы получили две несвязанные структуры:
 ![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/bridge2.png)
 Слева у нас полная абстракция, а справа уже конкретика. Чтобы их соеденить, мы внутри Car делаем поля с ссылкой на объект, реализующий интерфейс "марка машины". Таким образом, каждый седан, купэ и хэтчбэк имеет поле, где он хранит свою марку.
+![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/bridge3.png)
 
 
 
