@@ -20,6 +20,87 @@
 Слева у нас полная абстракция, а справа уже конкретика. Чтобы их соеденить, мы внутри Car делаем поля с ссылкой на объект, реализующий интерфейс "марка машины". Таким образом, каждый седан, купэ и хэтчбэк имеет поле, где он хранит свою марку.
 ![](https://github.com/mperestoronin/JavaPatterns/blob/main/photos/bridge3.png)
 
+``` java
+public interface Drawer {
 
+	public void drawCircle(int x, int y, int radius);
+}
 
+public class SmallCircleDrawer implements Drawer{
+	
+	public static final double radiusMultiplier = 0.25;
+	
+	@Override
+	public void drawCircle(int x, int y, int radius) {
+		System.out.println("Small circle center = " + x + "," + y + " radius = " + radius*radiusMultiplier);
+	}
+}
 
+public class LargeCircleDrawer implements Drawer{
+
+	public static final int radiusMultiplier = 10;
+	
+	@Override
+	public void drawCircle(int x, int y, int radius) {
+		System.out.println("Large circle center = " + x + "," + y + " radius = " + radius*radiusMultiplier);
+	}
+}
+
+public abstract class Shape {
+
+	protected Drawer drawer;
+	
+	protected Shape(Drawer drawer){
+		this.drawer = drawer;
+	}
+
+	public abstract void draw();
+
+	public abstract void enlargeRadius(int multiplier);
+}
+
+public class Circle extends Shape{
+
+	private int x;
+	private int y;
+	private int radius;
+	
+	public Circle(int x, int y, int radius, Drawer drawer) {
+		super(drawer);
+		setX(x);
+		setY(y);
+		setRadius(radius);
+	}
+
+	@Override public void draw() {  drawer.drawCircle(x, y, radius);  }
+
+	@Override public void enlargeRadius(int multiplier) {  radius *= multiplier;  }
+
+	public int getX() {  return x;  }
+	public int getY() {  return y;  }
+
+	public int getRadius()  {	return radius;	}
+
+	public void setX(int x) {  this.x = x;  }
+	public void setY(int y) {  this.y = y;  }
+
+	public void setRadius(int radius) {  this.radius = radius;  }
+}
+
+// Класс, показывающий работу шаблона проектирования "Мост".
+
+public class Application {
+
+	public static void main (String [] args){
+		Shape [] shapes = {
+				new Circle(5,10,10, new LargeCircleDrawer()), 
+				new Circle(20,30,100, new SmallCircleDrawer())};
+		
+		for (Shape next : shapes)
+			next.draw();
+	}
+}
+// Output
+Large circle center = 5,10 radius = 100
+Small circle center = 20,30 radius = 25.0
+```
