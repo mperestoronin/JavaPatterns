@@ -10,7 +10,7 @@
 
 ### Реализация 
 Реализация на C#
-``` python
+``` cs
 class Client
 {
     public void Main()
